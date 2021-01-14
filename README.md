@@ -2,7 +2,7 @@
 
 ## Required Packages:
 - request
-- streamlit
+- streamlit(version 0.62). The most recent version will break the code!
 - pandas
 
 All of these packages can be installed using `pip install <package_name>`
