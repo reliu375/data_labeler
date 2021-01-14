@@ -1,8 +1,13 @@
 import streamlit as st
 import pandas as pd
 from os.path import join
-import streamlit.ReportThread as ReportThread
-from streamlit.server.Server import Server
+# https://gist.github.com/okld/0aba4869ba6fdc8d49132e6974e2e662
+try:
+    import streamlit.ReportThread as ReportThread
+    from streamlit.server.Server import Server
+except:
+    import streamlit.report_thread as ReportThread
+    from streamlit.server.server import Server
 from bill_api import *
 
 # Restart the session after labeling a data point.
